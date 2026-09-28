@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: calibri;
+    font-size: 1.6rem;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+    height: 20dvh;
+}
+header img{
+    max-width: 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+nav a{
+    color: #048c4f;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: #048c4f;
+    color: white;
+}
+nav a img{
+    min-width: 40px;
+    display: flex;
+}
+main{
+    margin: 10px 15% 0px 15%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    height: 60dvh;
+    max-width: 100%;
+}
+main h1, main label{
+    font-size: 4.2rem;
+}
+section, figure{
+    width: 50%;
+}
+section{
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+section h1{
+    font-size: 40px;
+}
+#accent{
+    color: #048c4f;
+}
+section button{
+    background-color: #048c4f;
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    font-weight: bolder;
+}
+figure img{
+    max-width: 100%;
+    animation: animar 3s linear;
+}
+article{
+    margin: 0px 15% 0px 15%;
+    padding: 10px;
+}
+article h2{
+    text-align: center;
+    color: #048c4f;
+    margin: 3%;
+    font-family: "Betania Patmos", cursive;
+    font-size: 3.2rem;
+}
+article p{
+    text-align: justify;
+    margin-bottom: 12px;
+}
+.animar{
+    opacity: 0;
+    transition: 1s;
+}
+#banner{
+    background-image: url('../img/banner.svg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px 15% 0px 15%;
+    height: 100dvh;
+}
+#convite{
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    max-width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#convite h1{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+#convite label{
+    color: #048c4f;
+}
+#convite button{
+    width: 30%;
+    border: none;
+    background-color: #048c4f;
+    color: white;
+    padding: 10px;
+    border-radius: 3pc;
+    margin-top: 30px;
+    font-weight: 600;
+}
+hr{
+    margin-bottom: 20px;
+}
+/*ANIMAÇÕES*/
+
+@keyframes animar {
+    from{
+        max-width: 0%;
+    }
+    to{
+        max-width: 100%;
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width: 1080px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin-top: 10px;
+    }
+    header img{
+        max-width: 30%;
+    }
+    nav{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
+    }
+    br{
+        display: none;
+    }
+    main h1, main label{
+        font-size: 25px;
+        margin-top: 40%;
+        padding: 0;
+    }
+    main button{
+        width: 80%;
+    }
+    figure{
+        height: 40%;
+    }
+    section{
+        display: flex;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    article{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
